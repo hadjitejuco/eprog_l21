@@ -1,0 +1,26 @@
+
+//operators
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;  //2, 3
+    int sum, sub, mul, rem, idiv;
+    float rdiv;
+    printf ("Enter two numbers ");
+    scanf ("%d%d",&a,&b);
+    sum = a+b;
+    sub = a-b;
+    mul = a*b;
+    idiv = a/b;
+    rem = a%b;
+    rdiv = (float)a / (float)b;
+    printf ("\nThe sum is %d",sum);
+    printf ("\nThe diff is %d",sub);
+    printf ("\nThe prod is %d",mul);
+    printf ("\nThe div is %d",idiv);
+    printf ("\nThe rem is %d",rem);
+    printf ("\nThe rdiv is %f",rdiv);
+    return 0;
+}
