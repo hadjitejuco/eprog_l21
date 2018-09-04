@@ -1,0 +1,15 @@
+//area=pir2
+
+#include <stdio.h>
+#define pi 3.14159
+#define x printf
+int main()
+{
+    float  r;
+   //const float pi = 3.14159;
+    x ("Please enter radius ");
+    scanf ("%f",&r); //&address of operator
+    //area = pi*r*r;
+    x ("\nThe value of r is %.0f and The area is %.2f",r,pi*r*r);
+    return 0;
+}
