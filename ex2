@@ -1,0 +1,15 @@
+
+//input a string -> hadji 
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char name[255];  //array of characters
+    char phonenum[10];
+    printf ("enter name ");
+    //scanf ("%s",&name);
+    gets(name);
+    printf ("enter number ");
+    gets(phonenum);
+    printf ("Name is %s and number is %s",name,phonenum);
+    return 0;
+}
