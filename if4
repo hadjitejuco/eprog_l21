@@ -1,0 +1,16 @@
+//determine if a number is odd or even
+//if (condition) statement else statement 
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf ("Enter a number ");
+    scanf ("%d",&a);
+    if (a%2==0){   //true
+        printf ("number is Even");
+    }
+    else{   //false
+        printf ("Number is Odd");
+    }
+    return 0;
+}
