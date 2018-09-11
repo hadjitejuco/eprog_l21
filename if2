@@ -1,0 +1,17 @@
+#include <stdio.h> 
+int  main() 
+{ 
+	int  x;
+	printf( " Enter a number ::: " );
+	scanf( "%d", &x );
+	if( x > 100 )
+	{
+		printf( "\n Number is greater than 100." );
+	}
+	if (x < 100)
+	{
+	    printf( "\n Number is less than 100." );
+	}
+
+	return 0;
+}
