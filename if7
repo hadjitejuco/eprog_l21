@@ -31,5 +31,5 @@ int main()
 			printf("\nC is Big Value.");
 		}
 	}
-	getch();
+	return 0;
 }
