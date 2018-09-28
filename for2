@@ -1,0 +1,14 @@
+//count numbers -> Enter n: 10 -> 10 .. 20
+#include <stdio.h>
+int main(){
+    int i, n,m; //i -> loop, n->input 
+    printf ("Enter lower limit and upper limit: ");
+    scanf ("%d%d",&n,&m);    
+    //   (1)  (2)  (4)
+    for (i=n; i<=m;i++)   //true
+    {
+        printf ("%3d",i);//(3)
+    }
+    return 0;
+}
+
