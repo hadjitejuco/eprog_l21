@@ -1,0 +1,14 @@
+//count numbers -> Enter n: 10 -> 1 .. 10
+#include <stdio.h>
+int main(){
+    int i, n; //i -> loop, n->input 
+    printf ("Enter N: ");
+    scanf ("%d",&n);    
+    i=10;
+    do
+    {
+        printf ("%3d",i);  //10
+        i++;				//11
+    }while (i<=n);
+}
+   
