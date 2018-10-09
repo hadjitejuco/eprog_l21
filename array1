@@ -1,0 +1,52 @@
+
+//array -> homogenous type data (same)
+//one dim - two-dim array 
+//syntax 
+//   data_type name[elements/size];
+//   data_type name[size][size];
+//   int a;    // 1 element 
+//   int a,b,c,d,e;
+
+// int a[4];  //hold 5 elements  (0-4 = 5 0->index)
+//      loops (for, while, do while)
+//    1     2    3    4      5
+//  a[0], a[1], a[2], a[3], a[4]  -> int a[255];
+//   a      b     c    d     e 
+// dynamic -> linked list 
+
+//declare array with elements
+//  int a[] = {1,2,3,4,5,6,7,8,9,0};
+//  char x[] = {'a','b','c'};
+
+#include <stdio.h>
+
+int main()
+{           //a[0]=1, a[1]=2, a[2]...a[9]=0
+    int a[] = {11,22,13,14,15,16,17,18,19,0}; //10
+    int i; //loops
+    char x[] = {'a','b','c'};
+    
+    for (i=0;i<10;i++){
+        printf ("%3d", a[i]); //a[0], a[1]
+        
+    }
+    
+    printf ("\n");
+    for(i=0; i<3; i++){
+        printf ("%3c",x[i]);
+    }
+    /*
+    printf ("%3d",a[0]);
+    printf ("%3d",a[1]);
+    printf ("%3d",a[2]);
+    printf ("%3d",a[3]);
+    printf ("%3d",a[4]);
+    printf ("%3d",a[5]);
+    printf ("%3d",a[6]);
+    printf ("%3d",a[7]);
+    printf ("%3d",a[8]);
+    printf ("%3d",a[9]);
+    */
+
+    return 0;
+}
