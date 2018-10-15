@@ -1,0 +1,23 @@
+//create an array and determine the largest number
+#include <stdio.h>
+int main(){
+	int i, n, a[100], lar, small;
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("\nEnter %d numbers\n", n);
+	for (i=0;i<n;i++){			//input array
+		scanf ("%d",&a[i]);
+	}
+	lar=a[0];		//assume first element is the largest
+	small=a[0];		//assume first element is the smallest 
+	for (i=0; i<n;i++){
+		if (lar<a[i])	//compare to each element in the array
+			lar=a[i];
+	}
+	for (i=0; i<n;i++){
+		if (small>a[i])	//compare to each element in the array
+			small=a[i];
+	}
+	printf ("the largest number is %d, smallest is %d ",lar,small);
+	return 0;
+}
