@@ -1,0 +1,18 @@
+//create an array and determine the largest number
+#include <stdio.h>
+int main(){
+	int i, n, a[100], lar;
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("\nEnter %d numbers\n", n);
+	for (i=0;i<n;i++){			//input array
+		scanf ("%d",&a[i]);
+	}
+	lar=a[0];		//assume first element is the largest
+	for (i=0; i<n;i++){
+		if (lar<a[i])
+			lar=a[i];
+	}
+	printf ("the largest number is %d ",lar);
+	return 0;
+}
