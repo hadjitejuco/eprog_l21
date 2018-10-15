@@ -1,0 +1,17 @@
+//arrays
+#include <stdio.h>
+int main(){
+	int a[100];
+	int i, n,s=0;
+	printf ("Enter n: ");
+	scanf ("%d",&n);
+	printf ("\nEnter %d numbers\n",n);
+	for (i=0;i<n;i++){
+		scanf ("%d",&a[i]);
+	}
+	for (i=0; i<n;i++){
+		s=s+a[i];	//accumulator
+	}
+	printf ("\nThe sum is %d", s);
+	return 0;
+}
