@@ -1,0 +1,17 @@
+#include <stdio.h>
+void star(char ch, int ctr);
+int main(){
+	star('*',20);//*   
+	printf ("MENU\n");
+	star('*',20);//*  
+	printf ("[A] - Activity 1\n");
+	printf ("[B] - Activity 2\n");
+	printf ("[C] - Activity 3\n");
+	star('*',20);//* 
+	return 0;
+}
+void star(char ch, int ctr){
+	for (int i=1;i<ctr;i++)
+		printf ("%c",ch);
+	printf ("\n");
+}
