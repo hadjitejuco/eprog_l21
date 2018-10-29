@@ -1,0 +1,23 @@
+//functions with default args
+#include <stdio.h>
+//p r t
+float simp_int(float=1000,float=10,float=3);
+int main()
+{
+	float p,r,t,si;
+	si=simp_int(2000,15,2);
+	printf ("\nSimple interest is %f",si);
+	si=simp_int(2000,15);
+	printf ("\nSimple interest is %f",si);
+	si=simp_int(2000);
+	printf ("\nSimple interest is %f",si);
+	si=simp_int();
+	printf ("\nSimple interest is %f",si);
+	return 0;
+}
+float simp_int(float p,float r,float t)
+{
+	float si;
+	si=(p*r*t)/100;
+	return si;
+}
