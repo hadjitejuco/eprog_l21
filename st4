@@ -1,0 +1,34 @@
+#include <stdio.h>
+struct student{
+	int studno;
+	char name[50];
+	char address[50];
+};
+int main(){
+	student s[50]; 
+	int n, i, x, y=0; 
+	printf ("Enter n: ");
+	scanf ("%d", &n);
+	for (i=0;i<n;i++){
+		printf ("Enter student number, name and address of student %d\n",i+1);
+		scanf ("%d%s%s",&s[i].studno,&s[i].name, &s[i].address);
+	}
+	printf ("\nEnter student number to search\n");
+	scanf ("%d",&x);
+	printf ("\nDisplay Records\n");
+	printf ("\n--------------------------------------\n");
+	printf ("Student no\tStudent name\tStudent Address\n");
+	printf ("\n--------------------------------------\n");
+	for (i=0; i<n;i++)
+		printf ("%d\t\t%s\t\t%s\n",s[i].studno,s[i].name, s[i].address);
+		printf ("\n--------------------------------------\n");
+	for (i=0; i<n; i++)
+		if (s[i].studno == x){
+			printf ("Student is located at position %d",i+1);
+			y=1;
+		}
+	if (y==0){
+		printf ("Student not found ");
+	}
+	return 0;
+}
