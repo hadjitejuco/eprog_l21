@@ -1,0 +1,25 @@
+#include <stdio.h>
+struct student{
+	int studno;
+	char name[50];
+	float grade;
+};
+int main(){
+	student s[50]; //structure array
+	int n, i; 
+	printf ("Enter n: ");
+	scanf ("%d", &n);
+	for (i=0;i<n;i++){
+		printf ("Enter student number, name and grade of student %d\n",i+1);
+		scanf ("%d%s%f",&s[i].studno,&s[i].name, &s[i].grade);
+	}
+	printf ("\nDisplay Records\n");
+	printf ("\n--------------------------------------\n");
+	printf ("Student no\tStudent name\tStudent Grade\n");
+	printf ("\n--------------------------------------\n");
+	for (i=0; i<n;i++){
+		printf ("%d\t\t%s\t\t%.2f\n",s[i].studno,s[i].name, s[i].grade);
+
+	}
+	return 0;
+}
