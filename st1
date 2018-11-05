@@ -1,0 +1,17 @@
+#include <stdio.h>		
+int main(){
+	//structure definition
+	struct sample{
+		int num1;
+		float num2;
+		char c;
+	};
+	sample s; //structure declation
+	s.num1 = 10;	//assign 
+	s.num2 = 22.55;
+	s.c = 'A';
+	printf ("\nThe value = %d",s.num1);
+	printf ("\nThe value = %.2f",s.num2);
+	printf ("\nThe value = %c",s.c);
+	return 0;
+}
